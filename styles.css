@@ -1,5 +1,13 @@
+
+
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #2d3648;
+  padding: 8px;
 }
 
 a:link {
@@ -64,6 +72,7 @@ a:link {
 
 .menu-button {
   display: none;
+  background-color: white;
   cursor: pointer;
   border-radius: 4px;
   height: 40px;
@@ -83,6 +92,7 @@ a:link {
   background-color: #edf0f7;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 70px 40px;
   border-bottom: solid #1a202c 4px;
 }
@@ -94,12 +104,13 @@ a:link {
 .text-title {
   font-size: 80px;
   text-align: center;
-  line-height: 1;
+  color: #717d96;
 }
 
 .text-content {
   font-size: 40px;
   text-align: center;
+  color: #a0abc0;
 }
 
 .button-group {
@@ -145,6 +156,11 @@ a:link {
   background-color: white;
   width: 100%;
   padding: 70px 40px;
+  height: calc(100vw - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .photo-text {
@@ -152,9 +168,9 @@ a:link {
   font-size: 40px;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%; /* Ensure the parent container has a height set */
 }
 
 .third-page {
@@ -162,6 +178,10 @@ a:link {
   box-sizing: border-box;
   width: 100%;
   padding: 70px 40px;
+  height: calc(100vw - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -171,6 +191,7 @@ a:link {
   border-radius: 8px;
   border: dashed #cbd2e0 2px;
   background-color: white;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -181,11 +202,14 @@ a:link {
   padding-right: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .footer-logo {
   height: 40px;
-  width: auto;
+  width: max-content;
 }
 
 .footer-text {
@@ -207,6 +231,10 @@ a:link {
 }
 
 @media only screen and (max-width: 768px) {
+
+  .landing-page {
+    justify-content: space-between;
+  }
   
   .header-nav {
     display: none; /* Hide the navigation links in mobile view */
