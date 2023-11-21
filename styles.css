@@ -151,16 +151,22 @@ a:link {
   color: white;
 }
 
-.second-page {
+.second-page, .third-page {
   box-sizing: border-box;
-  background-color: white;
   width: 100%;
   padding: 70px 40px;
   height: calc(100vw - 80px);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.second-page {
+  background-color: white;
+}
+
+.third-page {
+  background-color: #717d96;
 }
 
 .photo-text {
@@ -172,18 +178,6 @@ a:link {
   justify-content: center;
   align-items: center;
 }
-
-.third-page {
-  background: #717d96;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 70px 40px;
-  height: calc(100vw - 80px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 .image-container {
   width: 100%;
