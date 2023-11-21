@@ -1,75 +1,79 @@
-<html>
-  <head>
-    <link href="styles.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="header">
-      <img class="header-logo" src="assets/logo.jpeg" class="logo">
-      <nav class="header-top-nav">
-        <ul class="header-nav">
-          <li><a class="header-item" href="#">Menu Item 1</a></li>
-          <li><a class="header-item" href="#">Menu Item 2</a></li>
-          <li><a class="header-item" href="#">Menu Item 3</a></li>
-          <li><a class="header-item" href="#">Menu Item 4</a></li>
-        </ul>
-      </nav>
-      <button class="menu-button" onclick="toggleMenu()">
-        <img class="menu-img" src="assets/menu.png">
-      </button>
-    </header>
-    <header class="mobile-header" id="mobile-header">
-      <nav class="mobile-header-nav">
-        <a class="footer-item" href="#">Menu Item 1</a>
-        <a class="footer-item" href="#">Menu Item 2</a>
-        <a class="footer-item" href="#">Menu Item 3</a>
-        <a class="footer-item" href="#">Menu Item 4</a>
-      </nav>
-    </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <img class="header-logo" src="assets/logo.jpeg" alt="Logo">
+    <nav class="header-top-nav">
+      <ul class="header-nav">
+        <li><a class="header-item" href="#">Menu Item 1</a></li>
+        <li><a class="header-item" href="#">Menu Item 2</a></li>
+        <li><a class="header-item" href="#">Menu Item 3</a></li>
+        <li><a class="header-item" href="#">Menu Item 4</a></li>
+      </ul>
+    </nav>
+    <button class="menu-button" onclick="toggleMenu()">
+      <img class="menu-img" src="assets/menu.png" alt="Menu">
+    </button>
+  </header>
 
-    <section class="landing-page">
-      <section class="text-group">
-        <h1 class="text-title">Welcome to our website</h1>
-        <h4 class="text-content">Welcome to our website, where
-          innovation meets excellence.</h4>
-      </section>
-      <section class="button-group">
-        <button class="custom-button button-first">Button</button>
-        <button class="custom-button button-second">Button</button>
-      </section>
-    </section>
-    <section class="second-page">
-      <section class="image-container">
-        <p class="photo-text">photo</p>
-      </section>
-    </section>
-    <section class="third-page">
-      <section class="image-container">
-        <p class="photo-text">photo</p>
-      </section>
-    </section>
-    <footer class="footer">
-      <img class="footer-logo" src="assets/logo.jpeg" class="logo">
-      <p class="footer-text">Copyright 2024 UNC</p>
-      <nav class="footer-nav">
-        <a class="footer-item" href="#">Menu Item 1</a>
-        <a class="footer-item" href="#">Menu Item 2</a>
-        <a class="footer-item" href="#">Menu Item 3</a>
-        <a class="footer-item" href="#">Menu Item 4</a>
-      </nav>
-    </footer>
+  <header class="mobile-header" id="mobile-header">
+    <nav class="mobile-header-nav">
+      <a class="footer-item" href="#">Menu Item 1</a>
+      <a class="footer-item" href="#">Menu Item 2</a>
+      <a class="footer-item" href="#">Menu Item 3</a>
+      <a class="footer-item" href="#">Menu Item 4</a>
+    </nav>
+  </header>
 
-    <script>
-      function toggleMenu() {
-        var menu = document.getElementById("mobile-header");
-        var body = document.body;
-        var html = document.documentElement;
+  <section class="landing-page">
+    <div class="text-group">
+      <h1 class="text-title">Welcome to our website</h1>
+      <h4 class="text-content">Welcome to our website, where innovation meets excellence.</h4>
+    </div>
+    <div class="button-group">
+      <button class="custom-button button-first">Button</button>
+      <button class="custom-button button-second">Button</button>
+    </div>
+  </section>
 
-        if (menu.className === "mobile-header") {
-          menu.className += " responsive";  
-        } else {
-          menu.className = "mobile-header";
-        }
+  <section class="second-page">
+    <div class="image-container">
+      <p class="photo-text">photo</p>
+    </div>
+  </section>
+
+  <section class="third-page">
+    <div class="image-container">
+      <p class="photo-text">photo</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img class="footer-logo" src="assets/logo.jpeg" alt="Logo">
+    <p class="footer-text">Copyright 2024 UNC</p>
+    <nav class="footer-nav">
+      <a class="footer-item" href="#">Menu Item 1</a>
+      <a class="footer-item" href="#">Menu Item 2</a>
+      <a class="footer-item" href="#">Menu Item 3</a>
+      <a class="footer-item" href="#">Menu Item 4</a>
+    </nav>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("mobile-header");
+      var body = document.body;
+      var html = document.documentElement;
+
+      if (menu.className === "mobile-header") {
+        menu.className += " responsive";  
+      } else {
+        menu.className = "mobile-header";
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
 </html>
